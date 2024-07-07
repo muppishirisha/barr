@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box
+}
+
+.container {
+  width: 100%;
+  height: auto
+}
+
+.search-bar {
+  width: 55%;
+  margin: 40px auto;
+  line-height: 56px;
+  position: relative
+}
+
+ .text{
+  width: 89%;
+  height: 33px;
+  padding: 0 10px;
+  color: #000;
+  border: 1px solid #023505;
+  border-radius: 15px 0 0 15px;
+  z-index: 2
+}
+
+
+button {
+  position: absolute;
+  width: 11%;
+  height: 33px;
+  border: 1px solid #BEBEBE;
+  top: 13px;
+  border-radius: 0px 15px 15px 0;
+  cursor: pointer;
+}
+
+button i {
+  opacity: .5;
+  transition: all 5s ease-in-out
+}
+
+button:hover {
+  background-color: #E4E4E4;
+  box-shadow: 0 1px 1px rgba(0,0,0,.15),
+  inset 0 0 2px rgba(0,0,0,.05);
+  transition: all .07s ease-in-out
+}
+
+</style>
+<body>
+
+<div class="container">
+    <div class="search-bar">
+      <form>
+        <input class="text" placeholder="Search">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+  </div>
+</div>
+</body>
+</html>
